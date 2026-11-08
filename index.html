@@ -1,0 +1,761 @@
+<!doctype html>
+<html lang="he" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>אריאל לרידו - הפרטים התקבלו</title>
+<style>
+@font-face{font-family:M;src:url(fonts/TelAviv-ModernistRegular.ttf);font-weight:400}
+@font-face{font-family:M;src:url(fonts/TelAviv-ModernistBold.ttf);font-weight:700}
+/* צבעים: לילה, נייבי, קרן תכלת, כחול מותג, לבן. פינות חדות. סולם אחיד: כותרת סקשן 46/32, טקסט 18/16. שוליים 64/44. */
+:root{--night:#050b18;--navy:#071328;--b1:#99EBFF;--b2:#2A8AD4;--brand:#2A8AD4;--ink:#07101f;--mut:#55627a;--line:#d5dde8;--wa:#1fb855;--beam:linear-gradient(100deg,#99EBFF,#2A8AD4);--g:clamp(16px,4vw,48px);--pad:64px;--h2:clamp(32px,3.6vw,46px)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--night);color:#fff;font-family:M,system-ui,sans-serif;font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}button{font:inherit;color:inherit;cursor:pointer}
+.w{max-width:1200px;margin:0 auto;padding-inline:var(--g)}
+.grad{background:var(--beam);-webkit-background-clip:text;background-clip:text;color:transparent}
+h1,h2,h3{margin:0;line-height:1.12;letter-spacing:-.01em;text-wrap:balance}
+h2{font-size:var(--h2);font-weight:700}
+.lt{font-weight:400}
+p{margin:0}
+.sec{padding:var(--pad) 0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:18px 30px;font-weight:700;font-size:19px;border:0;text-decoration:none;clip-path:polygon(0 0,100% 0,100% calc(100% - 12px),calc(100% - 12px) 100%,0 100%)}
+.btn.pri{background:var(--beam);color:#04101f}
+.btn.wa{background:var(--wa);color:#fff;box-shadow:0 18px 40px -18px rgba(42,138,212,.7)}
+.btn svg{width:24px;height:24px;flex:none;order:2}
+.pl{position:absolute;inset:0;margin:auto;width:76px;height:76px;border-radius:50%;border:1.5px solid rgba(255,255,255,.7);background:rgba(4,10,22,.35);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);display:grid;place-items:center;z-index:3;transition:transform .25s,background .25s}
+.pl:hover{transform:scale(1.06);background:rgba(4,10,22,.55)}
+.pl svg{width:24px;height:24px;margin-right:-3px}
+/* ---------- הירו ---------- */
+.hero{position:relative;overflow:hidden;padding:24px 0 0;background:radial-gradient(1100px 560px at 50% -10%,#0d3a7a 0%,transparent 60%),var(--night);text-align:center}
+.hero:before{content:"";position:absolute;inset:-20% -10% auto auto;width:70%;height:160%;background:linear-gradient(115deg,transparent 42%,rgba(153,235,255,.13) 49%,rgba(42,138,212,.06) 53%,transparent 60%);transform:rotate(-8deg);pointer-events:none}
+.top{position:relative;z-index:2;display:flex;align-items:center;justify-content:center;gap:12px;text-align:right}
+.top img{width:46px;height:46px}.top b{font-size:15px;letter-spacing:.14em}.top span{font-size:12px;color:rgba(255,255,255,.7);display:block}
+.hgrid{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;padding-top:44px}
+.ht{width:max-content;max-width:100%;margin:0 auto}
+.hero h1{font-size:clamp(44px,5.6vw,80px);font-weight:700;white-space:nowrap}
+.hero .sub{margin-top:18px;font-size:clamp(18px,1.7vw,22px);width:0;min-width:100%;color:#fff}
+.hero .acts{margin-top:30px}
+.vid{position:relative;width:min(900px,100%);aspect-ratio:16/9;background:#000;margin-top:44px;box-shadow:0 40px 90px -30px rgba(0,0,0,.8),0 0 0 1px rgba(153,235,255,.18)}
+.vid img{width:100%;height:100%;object-fit:cover}
+.vid:before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(4,7,13,.6),transparent 45%);z-index:1}
+.vid .cap{position:absolute;bottom:18px;right:22px;z-index:2;font-size:15px;text-align:right}.vid .cap b{display:block;font-size:18px}
+.hero .base{height:72px;background:linear-gradient(180deg,transparent,#fff 0);margin-top:-72px;position:relative;z-index:1}
+/* ---------- תוצאות ---------- */
+.res{background:#fff;color:var(--ink)}
+.hcen{text-align:center;max-width:760px;margin:0 auto 36px}
+.res h2{color:var(--brand);font-size:clamp(38px,4.6vw,60px)}
+.res .sub2{font-size:18px;color:var(--mut);margin-top:10px}
+.stage{display:grid;grid-template-columns:minmax(0,420px) 1fr;gap:56px;align-items:start}
+.cmp{position:relative;aspect-ratio:530/880;overflow:hidden;background:#0b1424;touch-action:pan-y;user-select:none;--p:50%}
+.cmp img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;pointer-events:none}
+.cmp .after{clip-path:inset(0 var(--p) 0 0)}
+.cmp .tag{position:absolute;top:14px;z-index:3;font-weight:700;font-size:15px;padding:6px 12px;background:rgba(4,7,13,.78);color:#fff}
+.cmp .tag.b{right:14px}.cmp .tag.a{left:14px;background:var(--brand)}
+.cmp .hd{position:absolute;top:0;bottom:0;right:var(--p);width:2px;margin-right:-1px;background:#fff;z-index:4}
+.cmp .kn{position:absolute;top:50%;right:var(--p);transform:translate(50%,-50%);z-index:5;width:54px;height:54px;border-radius:50%;background:#fff;color:var(--ink);display:grid;place-items:center;box-shadow:0 6px 24px rgba(0,0,0,.35);border:0}
+.cmp .kn svg{width:26px;height:26px}
+.who .nm{font-size:clamp(34px,3.4vw,44px);font-weight:700;line-height:1}
+.who .ag{color:var(--mut);margin-top:8px;font-size:18px}
+.sticker{display:inline-block;margin-top:18px;background:var(--brand);color:#fff;font-weight:700;font-size:clamp(20px,2vw,24px);padding:10px 18px}
+.who .st{margin-top:18px;font-size:18px;max-width:46ch;min-height:5.5em}
+.more{margin-top:28px}.more>b{font-size:14px;letter-spacing:.06em;color:var(--mut)}
+.thumbs{margin-top:12px;display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+.th{all:unset;cursor:pointer;position:relative;aspect-ratio:3/4;overflow:hidden;background:#0b1424;outline:2px solid transparent;outline-offset:2px}
+.th img{width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .4s}
+.th:hover img{transform:scale(1.05)}
+.th span{position:absolute;inset:auto 0 0 0;padding:20px 8px 7px;background:linear-gradient(0deg,rgba(4,7,13,.9),transparent);color:#fff;font-size:13px;line-height:1.25}
+.th span b{display:block;font-size:14px}
+.th[aria-pressed="true"],.th:focus-visible{outline-color:var(--brand)}
+/* ---------- עדויות ---------- */
+.tst{background:linear-gradient(180deg,var(--navy),var(--night));position:relative;overflow:hidden}
+.tst:before{content:"";position:absolute;left:50%;top:-30%;width:900px;height:900px;transform:translateX(-50%);background:radial-gradient(closest-side,rgba(42,138,212,.26),transparent);pointer-events:none}
+.tst h2{text-align:center;max-width:22ch;margin:0 auto;position:relative}
+.tst h2 .lt{display:block;font-size:.66em;margin-bottom:4px;color:rgba(255,255,255,.85)}
+.flow{position:relative;margin-top:36px;height:534px}
+.vc{position:absolute;top:0;left:50%;width:300px;aspect-ratio:9/16;transform:translateX(-50%);transition:transform .5s cubic-bezier(.2,.7,.2,1),opacity .5s,filter .5s;background:#000;overflow:hidden}
+.vc img,.vc video{width:100%;height:100%;object-fit:cover}
+.vc .t{position:absolute;inset:auto 0 0 0;padding:40px 16px 16px;background:linear-gradient(0deg,rgba(0,0,0,.85),transparent);font-size:14px;color:rgba(255,255,255,.85);text-align:center}.vc .t b{display:block;font-size:18px;color:#fff}
+.vc.on{box-shadow:0 30px 80px rgba(0,0,0,.6);z-index:3}
+.vc:not(.on) .pl,.vc:not(.on) .t{opacity:0}
+.vc:not(.on){cursor:pointer}
+.nav{display:flex;justify-content:center;align-items:center;gap:26px;margin-top:0;position:relative}
+.nav button{width:58px;height:58px;border-radius:50%;border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.04);display:grid;place-items:center;color:#fff;transition:background .2s,border-color .2s}
+.nav button:hover{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.6)}
+.nav button svg{width:26px;height:26px}
+.nav .ct{min-width:70px;text-align:center;font-size:15px;color:rgba(255,255,255,.65)}.nav .ct b{color:#fff;font-size:20px}
+/* ---------- אימון היכרות ---------- */
+.trial{background:#fff;color:var(--ink)}
+.tgrid{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center}
+.tgrid h2 .lt{display:block}
+.trial .lead{margin-top:18px;font-size:18px;color:#26324a}
+.price{display:flex;align-items:center;gap:16px;margin-top:26px;padding:16px 20px;background:#f1f6fc;width:max-content;max-width:100%}
+.price b{font-size:54px;line-height:1;font-weight:700;color:var(--brand)}.price b small{font-size:22px}
+.price span{font-size:16px;color:var(--ink);line-height:1.35}.price span em{display:block;font-style:normal;color:var(--mut);font-size:14px}
+/* יומן אמיתי */
+.cal{background:#fff;border:1px solid #dfe4ea;box-shadow:0 30px 70px -30px rgba(7,19,40,.3);font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:#1f2a37}
+.cal .bar{display:flex;align-items:center;gap:14px;padding:12px 16px;border-bottom:1px solid #e6eaef}
+.cal .bar b{font-size:17px;font-weight:600}.cal .bar .nv{display:flex;gap:6px;color:#5f6b7a}.cal .bar .nv span{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-size:15px}
+.cal .bar .tdy{border:1px solid #d6dce3;border-radius:6px;padding:3px 10px;font-size:13px}
+.cal .bar .vw{margin-right:auto;font-size:13px;border:1px solid #d6dce3;border-radius:6px;padding:3px 10px}
+.wk{display:grid;grid-template-columns:44px repeat(5,1fr)}
+.wk .dh{text-align:center;padding:8px 0 6px;border-bottom:1px solid #e6eaef;font-size:11px;color:#5f6b7a}
+.wk .dh b{display:block;font-size:20px;font-weight:500;color:#1f2a37;line-height:1.2}
+.wk .dh.on b{background:#1a73e8;color:#fff;width:34px;height:34px;border-radius:50%;margin:2px auto 0;display:grid;place-items:center;font-size:17px}
+.body{grid-column:1/-1;display:grid;grid-template-columns:44px repeat(5,1fr);grid-template-rows:repeat(13,30px);position:relative;background:repeating-linear-gradient(180deg,#eef1f4 0 1px,transparent 1px 30px)}
+.body .hl{grid-column:1;font-size:10px;color:#77818d;text-align:center;transform:translateY(-6px)}
+.body .col{grid-row:1/-1;border-right:1px solid #eef1f4}
+.ev{margin:1px 2px;border-radius:5px;padding:3px 6px;font-size:11px;line-height:1.25;overflow:hidden;color:#173a5e;background:#d8e7fb;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.ev small{display:block;font-size:10px;opacity:.75}
+.ev.g{background:#d4efdf;color:#17482e}.ev.p{background:#e6ddf8;color:#3b2a6b}.ev.o{background:#fde6cc;color:#6b3d0c}.ev.n{background:#e7eaee;color:#3b4552}
+.me{margin:1px 2px;border-radius:5px;background:var(--beam);color:#04101f;font-weight:700;font-size:12px;padding:4px 7px;line-height:1.25;z-index:2;position:relative;box-shadow:0 8px 24px rgba(42,138,212,.5),0 0 0 2px #fff;opacity:0;transform:scale(.6);transition:all .6s .5s cubic-bezier(.2,.9,.3,1.3)}
+.me small{display:block;font-weight:400;font-size:11px}
+.cal.in .me{opacity:1;transform:none}
+.cal.in .ev.mv{transform:translateY(-62px)}
+.nowl{position:absolute;right:44px;left:0;height:2px;background:#ea4335;z-index:3}
+.nowl:before{content:"";position:absolute;right:-5px;top:-4px;width:10px;height:10px;border-radius:50%;background:#ea4335}
+/* ארבע קופסאות על רקע הסטודיו */
+.studio{margin-top:56px;position:relative;padding:40px;background:url(img/studio_land.jpg) center 45%/cover}
+.studio:before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(5,11,24,.92),rgba(5,11,24,.55))}
+.studio .cap{position:relative;display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:24px;color:#fff}
+.studio .cap h3{font-size:28px}.studio .cap span{font-size:15px;color:var(--b1);font-weight:700}
+.boxes{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.bx{background:rgba(255,255,255,.97);color:var(--ink);padding:56px 20px 22px;position:relative;clip-path:polygon(0 0,100% 0,100% calc(100% - 16px),calc(100% - 16px) 100%,0 100%)}
+.bx .ic{position:absolute;top:0;right:0;width:58px;height:58px;background:var(--beam);display:grid;place-items:center;color:#04101f;clip-path:polygon(0 0,100% 0,100% 100%,22% 100%,0 78%)}
+.bx .ic svg{width:28px;height:28px}
+.bx .n{position:absolute;top:12px;left:16px;font-size:44px;font-weight:700;line-height:1;color:#e3edf8}
+.bx b{display:block;font-size:19px;line-height:1.25}
+.bx p{margin-top:8px;font-size:15.5px;color:#334058;line-height:1.5}
+.trial .end{margin:40px auto 0;text-align:center;font-weight:700;font-size:22px;max-width:40ch}
+/* ---------- 120 ---------- */
+.p120{background:var(--night);position:relative;overflow:hidden;padding-top:0}
+.ban{position:relative;overflow:hidden;display:grid;grid-template-columns:1.35fr .65fr;align-items:center;min-height:300px;background:linear-gradient(110deg,#082a63 0%,#1560c4 55%,#3fb2ff 100%);clip-path:polygon(0 0,100% 0,100% calc(100% - 30px),calc(100% - 30px) 100%,0 100%)}
+.ban:before{content:"";position:absolute;inset:-60% auto -60% 30%;width:30%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.22) 50%,transparent);transform:rotate(18deg);z-index:2}
+.ban:after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(120deg,transparent 0 44px,rgba(255,255,255,.05) 44px 45px);pointer-events:none;z-index:2}
+.ban .bt{position:relative;z-index:3;padding:40px 48px;display:flex;align-items:center;gap:30px}
+.ban .big{font-size:clamp(110px,13vw,190px);font-weight:700;line-height:.8;color:#fff;letter-spacing:-.03em}
+.ban .pj{font-size:clamp(26px,2.8vw,40px);font-weight:700;line-height:1.1;text-align:right;white-space:nowrap}
+.ban .pj span{display:block;font-weight:400;font-size:.52em;margin-top:8px;color:#e6f6ff}
+.ban .bi{position:relative;z-index:1;align-self:stretch;background:url(img/studio_panel.jpg) center 28%/cover;mask-image:linear-gradient(270deg,#000 55%,transparent);-webkit-mask-image:linear-gradient(270deg,#000 55%,transparent)}
+.p120 .hrow{max-width:820px;margin:56px auto 0;text-align:center}.p120 .hrow .lead{margin-top:16px}
+.p120 .lead{color:rgba(255,255,255,.88);font-size:18px}
+.stops{margin-top:48px;display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative}
+.stops:before{content:"";position:absolute;top:31px;right:12.5%;left:12.5%;height:2px;background:linear-gradient(270deg,var(--b1),var(--b2))}
+.stop{text-align:center;padding:0 16px;position:relative}
+.stop .si{width:62px;height:62px;margin:0 auto 16px;background:var(--night);border:1.5px solid var(--b1);display:grid;place-items:center;color:var(--b1);position:relative;clip-path:polygon(0 0,100% 0,100% calc(100% - 12px),calc(100% - 12px) 100%,0 100%)}
+.stop .si svg{width:30px;height:30px}
+.stop b{display:block;font-size:24px}
+.stop p{margin-top:8px;font-size:16px;color:rgba(255,255,255,.85);line-height:1.5}
+.daily{margin-top:34px;display:flex;align-items:center;justify-content:center;gap:16px;padding:18px 24px;border:1px solid rgba(31,184,85,.45);background:linear-gradient(90deg,rgba(31,184,85,.08),rgba(31,184,85,.16),rgba(31,184,85,.08));text-align:center}
+.daily svg{width:28px;height:28px;color:#3ddc7a;flex:none}
+.daily p{font-size:16.5px;color:#fff}.daily b{color:#7ff0a8}
+/* גם בסטודיו וגם מרחוק: קומפוזיציה אחת */
+.both{margin-top:64px;display:grid;grid-template-columns:1fr 1.2fr;gap:56px;align-items:center}
+.both .tx h3{font-size:var(--h2)}
+.both .tx h3 .lt{display:block}
+.both .pt{margin-top:24px;padding-top:18px;border-top:1px solid rgba(153,235,255,.2)}
+.both .pt b{display:flex;align-items:center;gap:10px;font-size:20px;color:var(--b1)}
+.both .pt b svg{width:22px;height:22px}
+.both .pt p{margin-top:6px;color:rgba(255,255,255,.88);font-size:17px}
+.combo{position:relative;height:560px}
+.combo .photo{position:absolute;inset:0 0 40px 120px;background:url(img/studio_panel.jpg) center 30%/cover;clip-path:polygon(0 0,100% 0,100% calc(100% - 24px),calc(100% - 24px) 100%,0 100%)}
+.combo .photo:after{content:"בסטודיו בכפר שמריהו";position:absolute;top:16px;right:16px;background:rgba(5,11,24,.8);color:#fff;font-size:14px;font-weight:700;padding:6px 12px}
+.combo .iph{position:absolute;left:0;bottom:0}
+.iph{width:250px;height:480px;background:#0b0b0d;border-radius:44px;padding:10px;box-shadow:0 0 0 1.5px #2b2f38,0 40px 80px -20px rgba(0,0,0,.85),0 0 80px rgba(42,138,212,.25);position:relative;direction:rtl;text-align:right;z-index:2}
+.iph .scr{width:100%;height:100%;border-radius:35px;overflow:hidden;background:#efeae2;display:flex;flex-direction:column;position:relative;font-family:-apple-system,"SF Pro Text","Segoe UI",Arial,sans-serif}
+.iph .isl{position:absolute;top:8px;left:50%;transform:translateX(-50%);width:76px;height:22px;background:#000;border-radius:14px;z-index:3}
+.sb{height:34px;display:flex;justify-content:space-between;align-items:flex-end;padding:0 22px 4px;font-size:11px;font-weight:600;color:#000;direction:ltr;background:#f6f5f3}
+.wh{display:flex;align-items:center;gap:8px;padding:6px 10px 8px;background:#f6f5f3;border-bottom:1px solid #e2e0dc;color:#000}
+.wh .bk{color:#0a7cff;font-size:22px;line-height:1}
+.wh img{width:30px;height:30px;border-radius:50%;object-fit:cover}
+.wh b{display:block;font-size:12.5px;line-height:1.1}.wh small{font-size:10px;color:#6b6b6b}
+.wh .ic2{margin-right:auto;display:flex;gap:12px;color:#0a7cff}.wh .ic2 svg{width:17px;height:17px}
+.chat{flex:1;padding:10px 8px;display:flex;flex-direction:column;gap:5px;background-color:#efeae2;background-image:radial-gradient(rgba(0,0,0,.045) 1px,transparent 1.5px);background-size:14px 14px;overflow:hidden}
+.day{align-self:center;background:#fff;color:#555;font-size:9.5px;padding:2px 8px;border-radius:6px;box-shadow:0 1px 1px rgba(0,0,0,.08);margin-bottom:2px}
+.bb{max-width:82%;font-size:11.5px;line-height:1.35;padding:5px 8px 4px;border-radius:8px;position:relative;color:#111;box-shadow:0 1px 1px rgba(0,0,0,.1)}
+.bb small{display:block;text-align:left;font-size:8.5px;color:#777;margin-top:1px}
+.bb.in{background:#fff;align-self:flex-start;border-top-right-radius:0}
+.bb.in:before{content:"";position:absolute;top:0;right:-6px;border:6px solid transparent;border-top-color:#fff;border-right:0}
+.bb.out{background:#d9fdd3;align-self:flex-end;border-top-left-radius:0}
+.bb.out:before{content:"";position:absolute;top:0;left:-6px;border:6px solid transparent;border-top-color:#d9fdd3;border-left:0}
+.bb.out small{color:#5d8a62}.bb.out small i{font-style:normal;color:#53bdeb}
+.wi{display:flex;align-items:center;gap:6px;padding:6px 8px 14px;background:#f6f5f3}
+.wi span{flex:1;background:#fff;border-radius:16px;height:26px;border:1px solid #e2e0dc;font-size:10.5px;color:#999;display:flex;align-items:center;padding:0 10px}
+.wi i{width:26px;height:26px;border-radius:50%;background:#1fb855;display:block}
+.p120 .fin{margin-top:40px;text-align:center;color:rgba(255,255,255,.85);font-size:17px}
+/* ---------- סיום ---------- */
+.close{background:radial-gradient(800px 420px at 50% 0%,rgba(42,138,212,.32),transparent 70%),var(--night);text-align:center;position:relative;overflow:hidden;border-top:1px solid rgba(153,235,255,.12)}
+.close h2{font-size:clamp(42px,5.4vw,72px);line-height:1.05}
+.close h2 span{display:block;font-weight:400;font-size:.6em;margin-top:2px;color:rgba(255,255,255,.88)}
+.close .cols{display:grid;grid-template-columns:1fr 1fr;gap:40px;max-width:920px;margin:36px auto 0;text-align:right}
+.close .cols p{font-size:18px;color:rgba(255,255,255,.85);padding-top:16px;border-top:1px solid rgba(153,235,255,.2)}
+.close .cols b{color:#fff}
+.close .ask{margin-top:40px;font-size:21px;font-weight:700}
+.close .btn{margin-top:40px;min-width:300px}
+footer{background:var(--night);padding:22px 0;font-size:13px;color:#6f819c;border-top:1px solid rgba(153,235,255,.08)}
+footer .w{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
+footer img{width:30px;height:30px}
+footer .l{display:flex;gap:10px;align-items:center}
+/* ---------- מובייל: הכל ממורכז ---------- */
+@media (max-width:900px){
+ :root{--pad:44px;--h2:clamp(27px,7.6vw,34px)}
+ body{font-size:16px}
+ .hero{padding:20px 0 0}
+ .hgrid{padding-top:28px}
+ .ht{width:auto;display:contents}
+ .hero h1{font-size:clamp(25px,7.9vw,34px);order:1}
+ .hero .sub{width:auto;min-width:0;font-size:15.5px;margin-top:12px;order:2}
+ .vid{order:3;margin:24px 0 0;width:calc(100% + var(--g)*2);box-shadow:none}
+ .hero .acts{order:4;margin:22px 0 0;align-self:stretch}.acts .btn{width:100%;font-size:18px}
+ .hero .base{display:none}
+ .hero{padding-bottom:40px}
+ .hcen{margin-bottom:22px}.res h2{font-size:clamp(28px,8.4vw,38px);white-space:nowrap}.res .sub2{font-size:15.5px}
+ .stage{display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center}
+ .who{display:contents}
+ .more{order:-1;margin-top:0;align-self:stretch}.more>b{display:none}
+ .cmp{aspect-ratio:auto;width:82%;height:min(98vw,440px);order:0}
+ .who .nm,.who .ag,.sticker,.who .st{order:1}
+ .who .ag{margin-top:-8px}.sticker{margin-top:0}
+ .who .st{min-height:0;font-size:16px;margin-top:0}
+ .thumbs{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 calc(var(--g)*-1);padding:2px var(--g) 4px;gap:8px;scrollbar-width:none}
+ .th{flex:0 0 24%;scroll-snap-align:start}
+ .flow{height:min(118vw,500px);margin-top:28px}.vc{width:min(66vw,280px)}
+ .tgrid{grid-template-columns:1fr;gap:26px;text-align:center}
+ .trial .lead{font-size:15px;margin-top:12px}
+ .price{margin:18px auto 0}
+ .wk .dh b{font-size:16px}.wk .dh.on b{width:28px;height:28px;font-size:14px}
+ .body{grid-template-rows:repeat(13,26px);background-image:repeating-linear-gradient(180deg,#eef1f4 0 1px,transparent 1px 26px)}
+ .ev{font-size:9px;padding:2px 3px}.ev small{display:none}.me{font-size:10px;padding:3px 4px}.me small{font-size:9px}
+ .cal.in .ev.mv{transform:translateY(-54px)}
+ .cal .bar .vw,.cal .bar .tdy{display:none}
+ .studio{margin:36px calc(var(--g)*-1) 0;padding:28px var(--g)}
+ .studio .cap{flex-direction:column;align-items:center;text-align:center;gap:4px}.studio .cap h3{font-size:22px}
+ .boxes{grid-template-columns:1fr;gap:12px}
+ .bx{text-align:center;padding:62px 18px 20px}.bx .ic{right:50%;transform:translateX(50%);clip-path:polygon(0 0,100% 0,100% 100%,0 100%)}.bx .n{display:none}
+ .trial .end{font-size:18px;margin-top:28px}
+ .p120 .w.wb{padding-inline:0}
+ .ban{grid-template-columns:1fr;min-height:0;text-align:center;clip-path:polygon(0 0,100% 0,100% calc(100% - 26px),calc(100% - 26px) 100%,0 100%)}
+ .ban .bi{display:none}
+ .ban .bt{flex-direction:column;gap:10px;padding:34px 20px 40px}
+ .ban .pj{text-align:center;white-space:normal}.ban .big{font-size:112px}
+ .p120 .hrow{grid-template-columns:1fr;gap:12px;margin-top:36px;text-align:center}.p120 .lead{font-size:16px}
+ .stops{grid-template-columns:1fr;gap:30px;margin-top:36px}
+ .stops:before{top:31px;bottom:80px;right:50%;left:auto;width:2px;height:auto;background:linear-gradient(180deg,var(--b1),var(--b2));opacity:.35}
+ .stop{padding:0 8px}.stop p{background:var(--night)}
+ .daily{flex-direction:column;gap:10px}
+ .both{grid-template-columns:1fr;gap:30px;margin-top:48px;text-align:center}
+ .both .tx{order:2}.both .pt b{justify-content:center}
+ .combo{height:520px;order:1}
+ .combo .photo{inset:0 0 150px 0}
+ .combo .iph{left:50%;transform:translateX(-50%) scale(.82);transform-origin:bottom center}
+ .close h2{font-size:clamp(36px,10vw,46px)}
+ .close .cols{grid-template-columns:1fr;gap:16px;text-align:center}.close .btn{width:100%}
+ footer .w{justify-content:center;text-align:center}
+}
+/* ===== סבב 7: אימון היכרות ===== */
+.trial2{background:#fff;color:var(--ink)}
+.hcen2{text-align:center;max-width:800px;margin:0 auto}
+.hcen2 h2 .lt{display:block;font-size:.72em;color:#26324a}
+.trial2 .lead{margin-top:16px;font-size:18px;color:#26324a}
+.chip2{display:inline-flex;align-items:center;gap:14px;margin-top:22px;padding:12px 22px;background:#eef5fd;border-radius:999px}
+.chip2 b{font-size:30px;line-height:1;color:var(--brand)}.chip2 span{font-size:16px;color:var(--ink)}
+.t2stage{margin-top:44px;display:grid;grid-template-columns:340px 1fr;align-items:center}
+.daycal{background:#fff;border:1px solid #dfe4ea;border-radius:18px;overflow:hidden;box-shadow:0 30px 70px -26px rgba(7,19,40,.35);font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:#1f2a37;position:relative;z-index:2;transform:translateX(-40px)}
+.dtop{display:flex;align-items:center;gap:12px;padding:14px 16px;border-bottom:1px solid #e6eaef}
+.dtop .d{width:42px;height:42px;border-radius:50%;background:#1a73e8;color:#fff;display:grid;place-items:center;font-size:19px;font-weight:600}
+.dtop small{display:block;font-size:12px;color:#5f6b7a}.dtop b{font-size:15px;font-weight:600}
+.rows{display:grid;grid-template-columns:46px 1fr;grid-template-rows:repeat(6,46px);background:repeating-linear-gradient(180deg,#eef1f4 0 1px,transparent 1px 46px)}
+.rows .h{font-size:11px;color:#77818d;text-align:center;transform:translateY(-7px)}
+.rows .e{grid-column:2;margin:2px 10px 2px 4px;border-radius:6px;padding:5px 9px;font-size:12.5px;color:#173a5e;background:#d8e7fb;line-height:1.25}
+.rows .e small{display:block;font-size:11px;opacity:.75}
+.rows .e.g{background:#d4efdf;color:#17482e}.rows .e.o{background:#fde6cc;color:#6b3d0c}
+.me2{grid-column:2;margin:2px 10px 2px 4px;border-radius:8px;padding:9px 11px;background:var(--beam);color:#04101f;font-weight:700;font-size:14px;line-height:1.3;box-shadow:0 10px 26px rgba(42,138,212,.55);opacity:0;transform:scale(.7);transition:all .6s .3s cubic-bezier(.2,.9,.3,1.3)}
+.me2 small{display:block;font-weight:400;font-size:12px}
+.daycal.in .me2{opacity:1;transform:none}
+.t2panel{background:#f3f7fc;border-radius:24px;padding:44px;padding-right:84px;position:relative;margin-right:-60px;background-image:radial-gradient(rgba(42,138,212,.12) 1px,transparent 1.5px);background-size:22px 22px}
+.t2panel .g4{display:grid;grid-template-columns:1fr 1fr;gap:34px 30px}
+.t2s{display:grid;grid-template-columns:64px 1fr;gap:16px;align-items:start}
+.hold{width:64px;height:76px;background:linear-gradient(180deg,#2A8AD4,#0d4fa0);border-radius:0 0 32px 32px;display:grid;place-items:end center;padding-bottom:10px;box-shadow:0 14px 26px -12px rgba(13,79,160,.7)}
+.hold img{width:38px;height:38px}
+.t2s b{display:block;font-size:19px;line-height:1.25}.t2s p{margin-top:6px;font-size:15.5px;color:#334058;line-height:1.5}
+.end2{margin:40px auto 0;text-align:center;font-weight:700;font-size:21px;max-width:40ch;color:var(--ink)}
+/* ===== סבב 7: 120 ===== */
+.ban .bt{z-index:auto!important}.ban .bt>*{position:relative;z-index:3}.ban .bt .bdg{width:190px;height:190px;mix-blend-mode:screen;margin:-20px 0;z-index:auto}
+.zz{margin-top:56px;position:relative;max-width:1040px;margin-inline:auto}
+.zz:before{content:"";position:absolute;top:60px;bottom:60px;right:50%;width:0;border-right:2px dashed rgba(153,235,255,.45)}
+.zr{display:grid;grid-template-columns:1fr 200px 1fr;align-items:center;position:relative}
+.zr+.zr{margin-top:-30px}
+.zc{background:linear-gradient(180deg,rgba(21,40,80,.7),rgba(10,20,44,.7));border:1px solid rgba(153,235,255,.18);border-radius:18px;padding:26px 28px;text-align:right;box-shadow:0 30px 60px -30px rgba(0,0,0,.7)}
+.zc b{display:block;font-size:24px;margin-top:10px}.zc p{margin-top:8px;font-size:16px;color:rgba(255,255,255,.86);line-height:1.55}
+.zi{display:inline-grid;place-items:center;width:44px;height:52px;background:linear-gradient(180deg,#2A8AD4,#0d4fa0);border-radius:0 0 22px 22px;padding-top:4px}
+.zi img{width:28px;height:28px}
+.zh{grid-column:2;position:relative;display:grid;place-items:center}
+.hex{width:150px;height:170px;background:center/cover;clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);position:relative;z-index:2}
+.zh:before{content:"";position:absolute;width:162px;height:184px;background:var(--beam);clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);z-index:1}
+.zn{position:absolute;bottom:-6px;left:28px;z-index:3;width:42px;height:42px;border-radius:50%;background:var(--night);border:2px solid var(--b1);display:grid;place-items:center;font-size:14px;font-weight:700;color:var(--b1)}
+.zr:nth-child(odd) .zc{grid-column:1;grid-row:1}
+.zr:nth-child(even) .zc{grid-column:3;grid-row:1}
+.zr .zh{grid-row:1}
+.daily2{margin-top:56px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;background:linear-gradient(120deg,rgba(31,184,85,.12),rgba(31,184,85,.04));border:1px solid rgba(31,184,85,.35);border-radius:24px;padding:36px 40px}
+.dtx b{display:block;font-size:26px;margin-top:12px}.dtx p{margin-top:10px;font-size:17px;color:rgba(255,255,255,.88)}
+.dtx .zi{background:linear-gradient(180deg,#1fb855,#0f7a38)}
+.wwin{background:#efeae2;border-radius:16px;overflow:hidden;box-shadow:0 30px 60px -20px rgba(0,0,0,.7);font-family:-apple-system,"Segoe UI",Arial,sans-serif;color:#111;max-width:420px;justify-self:center;width:100%}
+.wtop{display:flex;align-items:center;gap:10px;padding:10px 14px;background:#075e54;color:#fff}
+.wtop img{width:36px;height:36px;border-radius:50%;object-fit:cover}.wtop b{display:block;font-size:14px}.wtop small{font-size:11px;opacity:.8}
+.wbody{padding:14px 12px 16px;display:flex;flex-direction:column;gap:8px;background-image:radial-gradient(rgba(0,0,0,.045) 1px,transparent 1.5px);background-size:14px 14px}
+.wday{align-self:center;background:#fff;color:#555;font-size:11px;padding:2px 10px;border-radius:6px}
+.wb{max-width:82%;font-size:14px;line-height:1.4;padding:6px 9px 4px;border-radius:9px;position:relative;box-shadow:0 1px 1px rgba(0,0,0,.1)}
+.wb small{display:block;text-align:left;font-size:10.5px;color:#777;margin-top:2px}.wb small i{font-style:normal;color:#53bdeb}
+.wb.in{background:#fff;align-self:flex-start;border-top-right-radius:0}
+.wb.out{background:#d9fdd3;align-self:flex-end;border-top-left-radius:0}
+.wb .ph{display:block;width:230px;height:150px;border-radius:6px;background:center/cover;margin-bottom:6px}
+.week{margin-top:64px;text-align:center}
+.week h3{font-size:var(--h2)}.week h3 .lt{display:block}
+.leg2{display:grid;grid-template-columns:1fr 1fr;gap:30px;max-width:900px;margin:22px auto 0;text-align:right}
+.leg2 p{font-size:17px;color:rgba(255,255,255,.88)}
+.tg{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:700;padding:5px 14px;border-radius:999px;vertical-align:middle}
+.tg img{width:20px;height:20px}
+.tg.s{background:rgba(42,138,212,.3);color:#d8f1ff}.tg.r{background:rgba(31,184,85,.25);color:#d4f8e1}
+.leg2 .tg{display:flex;width:max-content;margin:0 0 8px}
+.days{margin-top:30px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.dy{border-radius:18px;overflow:hidden;background:#0b1a33;border:1px solid rgba(153,235,255,.14);text-align:right}
+.dh2{display:flex;justify-content:space-between;align-items:center;padding:12px 14px}
+.dh2 b{font-size:17px}
+.dp{display:block;height:230px;background:center/cover}
+@media (max-width:900px){
+ .hcen2 h2 .lt{font-size:.78em}.trial2 .lead{font-size:15px}
+ .chip2{flex-direction:column;gap:4px;border-radius:18px;padding:12px 18px}.chip2 span{font-size:14.5px}
+ .t2stage{grid-template-columns:1fr;margin-top:30px}
+ .daycal{transform:none;margin:0 6%}
+ .t2panel{margin:-30px 0 0;padding:60px 18px 26px}
+ .t2panel .g4{grid-template-columns:1fr;gap:26px}
+ .t2s{grid-template-columns:1fr;justify-items:center;text-align:center}
+ .end2{font-size:18px;margin-top:28px}
+ .ban .bt .bdg{width:150px;height:150px;margin:0}
+ .p120>.w.wb{padding-inline:0!important;max-width:none}
+ .zr{grid-template-columns:1fr;justify-items:center}.zr+.zr{margin-top:30px}
+ .zr .zh,.zr:nth-child(odd) .zh,.zr:nth-child(even) .zh{grid-column:1;grid-row:1}
+ .zr:nth-child(odd) .zc,.zr:nth-child(even) .zc{grid-column:1;grid-row:2;margin-top:-26px;text-align:center;position:relative;z-index:3;padding-top:34px}
+ .hex{width:120px;height:136px}.zh:before{width:130px;height:148px}.zn{left:auto;right:-16px}
+ .daily2{grid-template-columns:1fr;padding:26px 18px;text-align:center;gap:24px}
+ .wb .ph{width:200px;height:130px}
+ .leg2{grid-template-columns:1fr;gap:18px;text-align:center}.leg2 .tg{margin:0 auto 8px}
+ .days{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;margin:30px calc(var(--g)*-1) 0;padding:0 var(--g) 6px;gap:12px;scrollbar-width:none}
+ .dy{flex:0 0 62%;scroll-snap-align:center}.dp{height:200px}
+}
+
+
+/* סבב 8: סלפי אמיתי ולוגו */
+.top img{width:auto;height:44px}.top i{width:1px;height:34px;background:rgba(153,235,255,.35)}
+.vid{overflow:hidden;border-radius:4px;isolation:isolate;background:radial-gradient(60% 90% at 50% 50%,#123b78,#061229 70%)}
+.vid .amb{position:absolute;inset:-8%;width:116%;height:116%;object-fit:cover;filter:blur(40px) grayscale(1) brightness(.6);mix-blend-mode:luminosity;opacity:.35;z-index:0}
+.vid:after{content:"";position:absolute;inset:0;z-index:0;background:linear-gradient(115deg,transparent 30%,rgba(153,235,255,.12) 45%,transparent 55%),radial-gradient(rgba(153,235,255,.16) 1px,transparent 1.5px) 0 0/22px 22px;pointer-events:none}
+.vid .main{position:relative;z-index:1;display:block;height:100%;aspect-ratio:9/16;margin:0 auto;object-fit:cover;box-shadow:0 0 0 1px rgba(153,235,255,.25),0 30px 60px -10px rgba(0,0,0,.7)}
+.vid:before{z-index:2;pointer-events:none}
+.vid .cap{display:flex;align-items:center;gap:12px;z-index:3}.vid .cap img{height:34px;width:auto}
+.snd{position:absolute;z-index:4;left:50%;bottom:22px;transform:translateX(-50%);display:inline-flex;align-items:center;gap:10px;padding:11px 20px;border-radius:999px;border:1px solid rgba(255,255,255,.55);background:rgba(4,10,22,.45);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);color:#fff;font:inherit;font-weight:700;font-size:16px;white-space:nowrap;cursor:pointer;transition:background .25s,opacity .3s}
+.snd:hover{background:rgba(42,138,212,.7)}
+.eq{display:inline-flex;align-items:flex-end;gap:2px;height:14px}.eq i{width:3px;background:var(--b1);border-radius:2px;animation:eq 1s ease-in-out infinite}.eq i:nth-child(2){animation-delay:.2s}.eq i:nth-child(3){animation-delay:.4s}
+@keyframes eq{0%,100%{height:4px}50%{height:14px}}
+.vid.on .snd,.vid.on .cap,.vid.on:before{opacity:0;pointer-events:none}
+@media (max-width:900px){.vid{aspect-ratio:4/5}.vid .main{width:100%;height:100%;aspect-ratio:auto}.vid .amb{display:none}.vid .cap{top:16px;bottom:auto;right:16px}.vid .cap div{display:none}.vid .cap img{height:28px}.vid:before{background:linear-gradient(0deg,rgba(4,7,13,.55),transparent 35%)}.snd{bottom:20px}.top img{height:38px}}
+
+/* ===== סבב 8: השעה נפתחת מתוך היומן ===== */
+.t2stage{grid-template-columns:320px 1fr;gap:120px;position:relative;align-items:center}
+.daycal{transform:none}
+.zoom{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:1;overflow:visible}
+.hour{position:relative;z-index:2;background:#fff;border:1px solid #dbe5f1;border-radius:22px;padding:24px 30px 20px;box-shadow:0 30px 70px -34px rgba(7,19,40,.4)}
+.hh{display:flex;align-items:baseline;gap:12px;font-size:15px;color:#4a5872;padding-bottom:14px;border-bottom:1px solid #e6edf5}
+.hh b{font-size:22px;color:var(--brand)}
+.hour ol{list-style:none;margin:0;padding:0}
+.hs{display:grid;grid-template-columns:50px 6px 1fr;gap:0 18px;padding-top:16px}
+.hs time{font-size:14px;font-weight:700;color:#4a5872;transform:translateY(-3px)}
+.seg{border-radius:6px;background:linear-gradient(180deg,#99EBFF,#2A8AD4);min-height:60px;transform-origin:top;transform:scaleY(0);transition:transform .7s cubic-bezier(.2,.8,.2,1)}
+.hs:nth-child(2) .seg{min-height:40px}.hs.big .seg{min-height:118px}
+.hour.in .seg{transform:none}.hour.in .hs:nth-child(2) .seg{transition-delay:.25s}.hour.in .hs:nth-child(3) .seg{transition-delay:.5s}.hour.in .hs:nth-child(4) .seg{transition-delay:.75s}
+.hb{display:grid;grid-template-columns:46px 1fr;gap:14px;align-items:start}
+.hi{width:46px;height:54px;background:linear-gradient(180deg,#2A8AD4,#0d4fa0);border-radius:0 0 23px 23px;display:grid;place-items:end center;padding-bottom:8px}
+.hi img{width:28px;height:28px}
+.hb b{font-size:19px;line-height:1.25}
+.hb small{display:inline-block;margin-right:8px;font-size:12.5px;font-weight:700;color:var(--brand);background:#eaf3fd;padding:1px 9px;border-radius:999px;vertical-align:2px}
+.hb p{margin-top:4px;font-size:15.5px;color:#334058;line-height:1.5}
+.hend{display:block;margin-top:8px;font-size:14px;font-weight:700;color:#4a5872}
+/* ===== סבב 8: הזיגזג של סבב 7 עם צילומים אמיתיים ותווית גדולה ===== */
+@media (min-width:901px){.zz{margin-top:60px}.zr+.zr{margin-top:18px}.zr{grid-template-columns:1fr 230px 1fr}.hex{width:176px;height:200px}.zh:before{width:188px;height:214px}.zn{left:30px;bottom:2px}}
+.zc{display:grid;grid-template-columns:1fr auto;gap:6px 16px;align-items:end;padding:24px 28px 26px;position:relative}
+.zc .zk{grid-column:1;margin:0;font-size:58px;line-height:.9;font-weight:700;background:var(--beam);-webkit-background-clip:text;background-clip:text;color:transparent}
+.zc .zk small{display:block;font-size:17px;font-weight:400;color:rgba(255,255,255,.7);-webkit-text-fill-color:rgba(255,255,255,.7);margin-bottom:6px}
+.zc .zi{grid-column:2;grid-row:1;align-self:start}
+.zc p{grid-column:1/3;margin-top:12px;font-size:16.5px}
+.zc:after{content:"";position:absolute;top:50%;width:26px;height:1px;background:rgba(153,235,255,.45)}
+.zr:nth-child(odd) .zc:after{left:-26px}.zr:nth-child(even) .zc:after{right:-26px}
+.zr:nth-child(1) .hex{background-position:72% center}
+.wb.out{max-width:78%}
+@media (max-width:900px){
+ .t2stage{grid-template-columns:1fr;gap:54px}
+ .daycal{margin:0 8%}
+ .hour{padding:18px 16px 16px;border-radius:18px}.hh{flex-direction:column;gap:0;align-items:center;text-align:center}
+ .hs{grid-template-columns:5px 1fr;gap:4px 14px}.hs .seg{grid-column:1;grid-row:1/3}.hs time{grid-column:2;grid-row:1;font-size:13px;transform:none;color:var(--brand)}.hs .hb{grid-column:2;grid-row:2}
+ .hb{grid-template-columns:38px 1fr;gap:12px;text-align:right}.hi{width:38px;height:44px;padding-bottom:6px}.hi img{width:22px;height:22px}.hb small{margin:4px 0 0;display:table}
+ .hb b{font-size:17px}.hb p{font-size:15px}
+ .seg{min-height:54px}.hs.big .seg{min-height:96px}
+ .zr+.zr{margin-top:30px}
+ .hex{width:132px;height:150px}.zh:before{width:142px;height:162px}
+ .zc{text-align:center;justify-items:center;grid-template-columns:1fr}.zc .zi{display:none}.zc p{grid-column:1}.zc:after{display:none}
+ .zc .zk{font-size:46px}
+}
+
+/* ===== סבב 9: ציר ארבע תחנות ===== */
+.t4{list-style:none;margin:64px auto 0;padding:0;max-width:1120px;display:grid;grid-template-columns:repeat(4,1fr);gap:28px;position:relative}
+.t4:before{content:"";position:absolute;top:104px;right:12.5%;left:12.5%;height:2px;background:linear-gradient(90deg,rgba(153,235,255,.15),rgba(153,235,255,.6),rgba(153,235,255,.15))}
+.s4{text-align:center;position:relative}
+.hx{position:relative;width:184px;height:208px;margin:0 auto;display:grid;place-items:center}
+.hx:before{content:"";position:absolute;inset:0;background:var(--beam);clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%)}
+.hx .hex{width:174px;height:198px;clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);background:center/cover;position:relative}
+.hx .zn{position:absolute;bottom:4px;left:50%;right:auto;transform:translateX(-50%);z-index:3}
+.s4t{margin-top:22px}
+.s4t b{display:block;font-size:24px;line-height:1.2}
+.s4t p{margin:10px auto 0;max-width:30ch;font-size:16.5px;line-height:1.55;color:rgba(255,255,255,.86)}
+@media (max-width:900px){
+ .t4{grid-template-columns:1fr;gap:30px;margin-top:40px}
+ .t4:before{top:60px;bottom:60px;right:55px;left:auto;width:2px;height:auto;background:linear-gradient(180deg,rgba(153,235,255,.6),rgba(153,235,255,.15))}
+ .s4{display:grid;grid-template-columns:110px 1fr;gap:18px;align-items:center;text-align:right}
+ .hx{width:110px;height:124px}.hx .hex{width:102px;height:116px}
+ .hx .zn{width:34px;height:34px;font-size:12px;bottom:-4px}
+ .s4t{margin:0}.s4t b{font-size:20px}.s4t p{margin:6px 0 0;font-size:15px;max-width:none}
+}
+
+/* ===== סבב 10: באנר PROJECT YOU ===== */
+.pyb{position:relative;min-height:520px;padding:40px 0;display:flex;align-items:center;overflow:hidden}
+.pyp{position:absolute;inset:0 auto 0 0;width:58%;background:url(img/up/t1.jpg) 30% 35%/cover}
+.pyp:after{content:"";position:absolute;inset:0;background:linear-gradient(270deg,var(--night) 0%,rgba(5,11,24,.65) 22%,rgba(5,11,24,0) 55%),linear-gradient(0deg,var(--night) 0%,transparent 30%),linear-gradient(180deg,var(--night) 0%,transparent 22%)}
+.pyt{position:relative;z-index:2;width:100%}
+.pyk{display:inline-block;font-size:15px;font-weight:700;letter-spacing:.32em;color:var(--b1);padding:7px 16px;border:1px solid rgba(153,235,255,.4);border-radius:999px}
+.pyn{display:flex;flex-direction:column;align-items:flex-start;gap:18px;margin-top:18px}
+.pyn b{font-size:clamp(150px,17vw,250px);line-height:.78;font-weight:700;letter-spacing:-.04em;color:transparent;-webkit-text-stroke:2px #99EBFF;background:linear-gradient(180deg,rgba(153,235,255,.35),rgba(42,138,212,0) 70%);-webkit-background-clip:text;background-clip:text;filter:drop-shadow(0 0 24px rgba(42,138,212,.45))}
+.pyn span{font-size:clamp(28px,3vw,42px);font-weight:700;line-height:1.15}
+.pyn small{display:block;margin-top:12px;font-size:.5em;font-weight:400;color:rgba(255,255,255,.82)}
+/* ===== סבב 10: בסטודיו וגם מרחוק ===== */
+.sr{margin-top:72px;text-align:center}
+.sr h3{font-size:var(--h2)}.sr h3 .lt{display:block}
+.srx{position:relative;margin-top:30px;display:grid;grid-template-columns:1fr 1fr;height:500px;border-radius:24px;overflow:hidden;border:1px solid rgba(153,235,255,.18)}
+.srh{position:relative;background:center 30%/cover;display:flex;align-items:flex-end;text-align:right}
+.srh.st{clip-path:polygon(0 0,100% 0,100% 100%,-12% 100%);margin-left:-60px;z-index:1}
+.srh.rm{clip-path:polygon(12% 0,100% 0,100% 100%,0 100%);margin-right:-60px}
+.srh:before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(4,9,20,.92) 0%,rgba(4,9,20,.35) 45%,transparent 70%)}
+.srl{position:relative;padding:30px 36px;max-width:440px}
+.srh.st .srl{margin-right:0}.srh.rm .srl{margin-right:auto;margin-left:0;padding-right:70px}
+.srl .tg{font-size:16px;padding:7px 16px}
+.srl p{margin-top:12px;font-size:17px;line-height:1.55;color:rgba(255,255,255,.92)}
+.srb{position:absolute;top:-10%;bottom:-10%;left:50%;width:4px;margin-left:-2px;background:linear-gradient(180deg,#99EBFF,#2A8AD4);transform:skewX(-6.8deg);box-shadow:0 0 22px rgba(153,235,255,.8);z-index:2}
+@media (max-width:900px){
+ .pyb{min-height:0;display:block;padding:0}
+ .pyp{position:relative;width:100%;height:300px;inset:auto}
+ .pyp:after{background:linear-gradient(0deg,var(--night) 0%,rgba(5,11,24,0) 55%)}
+ .pyt{margin-top:-70px;text-align:center}
+ .pyn{align-items:center;gap:10px;margin-top:14px}
+ .pyn b{font-size:150px}.pyn span{max-width:none;font-size:28px}
+ .sr{margin-top:56px}
+ .srx{grid-template-columns:1fr;height:auto;margin-inline:calc(var(--g)*-1);border-radius:0;border-inline:0}
+ .srh{min-height:340px}
+ .srh.st{clip-path:polygon(0 0,100% 0,100% 100%,0 calc(100% - 40px));margin:0 0 -40px;z-index:1}
+ .srh.rm{clip-path:none;margin:0}.srh.rm .srl{padding:56px 22px 26px}
+ .srl{padding:26px 22px 50px;max-width:none}
+ .srb{display:none}
+}
+
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style><style>/* ===== סבב 11 ===== */
+.btn,.btn.wa,.acts .btn,.close .btn{clip-path:none!important;border-radius:999px!important}
+.top .cap2{display:inline-flex;align-items:center;gap:14px;padding:8px 20px 8px 10px;border:1px solid rgba(153,235,255,.22);border-radius:999px;background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.02));backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);box-shadow:0 10px 30px -12px rgba(0,0,0,.6)}
+.top .cap2 img{height:40px;width:auto}
+.top .cap2 i{width:1px;height:30px;background:rgba(153,235,255,.3)}
+.top .cap2 b{display:block;font-size:17px;letter-spacing:0;line-height:1.15}
+.top .cap2 span{display:block;font-size:12.5px;color:rgba(255,255,255,.66);line-height:1.3}
+.res.sec{padding-top:40px}
+.res .hcen{margin-bottom:26px}
+.who .ag:empty{display:none}
+.sticker{border-radius:999px;padding-inline:24px}
+.close .cols{grid-template-columns:1fr;gap:18px;max-width:640px;text-align:center}
+.close .cols p{border-top:0;padding-top:0}
+.close .cols p+p{padding-top:18px;border-top:1px solid rgba(153,235,255,.2)}
+@media (max-width:900px){
+ .top .cap2{gap:10px;padding:6px 16px 6px 8px}.top .cap2 img{height:32px}.top .cap2 i{height:26px}.top .cap2 b{font-size:15px}.top .cap2 span{font-size:11.5px}
+ .res.sec{padding-top:26px}
+ .res .hcen{margin-bottom:14px}.res .sub2{margin-top:6px;font-size:14.5px;line-height:1.45}
+ .stage{gap:12px}
+ .cmp{width:100%;height:clamp(220px,36svh,300px)}
+ .th{flex:0 0 21%}
+ .who .nm{font-size:32px}
+ .who .st{font-size:15px;line-height:1.5}
+}
+</style>
+<style>/* ===== סבב 12: מהלוח ===== */
+.kk{display:block;font-size:clamp(20px,2vw,26px);font-weight:400;color:#99EBFF;margin-bottom:6px}
+.ld{font-size:18px;line-height:1.6;max-width:56ch;margin-top:16px}
+.pr{display:inline-flex;align-items:center;gap:14px;margin-top:24px;padding:10px 22px 10px 12px;border-radius:999px;background:rgba(5,11,24,.55);backdrop-filter:blur(8px);border:1px solid rgba(153,235,255,.3)}
+.pr b{font-size:30px;line-height:1;background:var(--beam);-webkit-background-clip:text;background-clip:text;color:transparent;padding:6px 14px;border-radius:999px;background-color:transparent}
+.pr span{font-size:14.5px;line-height:1.3;text-align:right;opacity:.9}
+.en{margin:48px auto 0;text-align:center;font-weight:700;font-size:20px;max-width:44ch}
+.nt{background:rgba(250,250,252,.94);color:#111;border-radius:22px;padding:12px 16px 14px;width:300px;box-shadow:0 24px 60px -18px rgba(0,0,0,.6);font-family:-apple-system,"SF Pro Text",system-ui,sans-serif;text-align:right;backdrop-filter:blur(14px)}
+.nt .ap{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:#6b6b70;text-transform:none}
+.nt .ap svg{width:18px;height:18px;padding:2px;border-radius:5px;background:#fff;color:#e5483b;stroke-width:2;box-shadow:0 0 0 1px #e6e6ea}
+.nt small{float:left;font-size:12px;color:#8a8a90;margin-top:2px}
+.nt b{display:block;font-size:15.5px;margin-top:6px}
+.nt p{font-size:14px;color:#3c3c43;margin-top:1px}
+.o7tb{background:#fff;color:var(--ink);padding:80px 0}
+.o7tb .gr{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+.o7tb .kk{color:var(--brand)}
+.o7tb h2{font-size:clamp(34px,3.8vw,52px)}
+.o7tb .ld{color:#33405a}
+.sl{list-style:none;margin:30px 0 0;padding:0}
+.sl li{display:grid;grid-template-columns:40px 1fr;gap:16px;padding:16px 0;border-top:1px solid #e3e8ef}
+.sl li:last-child{border-bottom:1px solid #e3e8ef}
+.sl i{width:34px;height:34px;color:var(--brand);margin-top:2px}.sl i svg{width:100%;height:100%}
+.sl b{font-size:19px}.sl p{font-size:15.5px;color:#46536b;margin-top:2px}
+.o7tb .pr{background:#eef5fd;border-color:#cfe2f7}.o7tb .pr span{color:var(--ink)}
+.o7tb figure{margin:0;position:relative}
+.o7tb figure img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:22px;box-shadow:0 40px 80px -36px rgba(7,19,40,.55)}
+.o7tb figure .nt{position:absolute;bottom:28px;right:-36px;border:1px solid #e6e6ea}
+.o7tb .en{color:var(--ink)}
+.nts{position:absolute;left:10px;right:10px;bottom:70px;display:flex;flex-direction:column;gap:8px}
+.gk{display:block;color:#4fe08a;font-weight:700;font-size:16px;margin-bottom:8px}
+.o7wa h3,.o7wb h3,.o7wc h3{font-size:clamp(30px,3.4vw,46px);line-height:1.1}
+.o7wa .tx p,.o7wb .tx p,.o7wc .tx p{font-size:18px;line-height:1.6;opacity:.88;margin-top:14px;max-width:44ch}
+.o7wa{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:center}
+.o7wa .st{position:relative;height:520px;font-family:-apple-system,system-ui,sans-serif}
+.o7wa .av{position:absolute;top:50%;left:50%;transform:translate(-50%,-58%);width:230px;height:230px;border-radius:50%;padding:6px;background:conic-gradient(#1fb855,#99EBFF,#1fb855);box-shadow:0 0 80px rgba(31,184,85,.35)}
+.o7wa .av img{width:100%;height:100%;border-radius:50%;object-fit:cover;border:5px solid var(--night)}
+.o7wa .on{position:absolute;bottom:18px;left:22px;width:26px;height:26px;border-radius:50%;background:#25d366;border:5px solid var(--night)}
+.o7wa .nm{position:absolute;top:calc(50% + 70px);left:50%;transform:translateX(-50%);text-align:center}
+.o7wa .nm b{display:block;font-size:22px;font-family:M,system-ui}.o7wa .nm span{font-size:14px;color:#4fe08a}
+.o7wa .b{position:absolute;max-width:250px;padding:9px 13px;border-radius:16px;font-size:15px;line-height:1.35;box-shadow:0 18px 40px -16px rgba(0,0,0,.7)}
+.o7wa .b.out{background:#d9fdd3;color:#111;border-top-left-radius:4px}.o7wa .b.in{background:#fff;color:#111;border-top-right-radius:4px}
+.o7wa .b1{top:20px;right:2%}.o7wa .b2{top:110px;left:0}.o7wa .b3{bottom:96px;right:4%}.o7wa .b4{bottom:10px;left:6%}
+.o7wa .nm{top:calc(50% + 96px)}
+.o7wa .av{box-shadow:none;background:#1fb855;padding:4px}
+.o7tb svg,.nt svg{fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+@media (max-width:900px){
+.ld{font-size:15.5px}
+.en{font-size:17px;margin-top:32px}
+.pr{margin-top:18px}
+.pr b{font-size:26px}
+.nt{width:270px}
+.o7tb{padding:44px 0}
+.o7tb .gr{grid-template-columns:1fr;gap:28px}
+.o7tb figure{order:-1;margin:0 calc(var(--g)*-1)}
+.o7tb figure img{border-radius:0;aspect-ratio:4/4.4}
+.o7tb figure .nt{right:auto;left:50%;transform:translateX(-50%);bottom:-34px}
+.o7tb .tx{padding-top:30px;text-align:center}
+.o7tb .ld{margin-inline:auto}
+.sl{text-align:right}
+.o7wa{grid-template-columns:1fr;gap:10px;text-align:center}
+.o7wa .tx p{margin-inline:auto}
+.o7wa .st{height:auto;display:flex;flex-direction:column;gap:10px;padding-top:270px}
+.o7wa .av{top:10px;transform:translateX(-50%);width:170px;height:170px}
+.o7wa .nm{top:192px}
+.o7wa .b{position:static;max-width:82%;text-align:right}
+.o7wa .b.out{align-self:flex-end}
+.o7wa .b.in{align-self:flex-start}
+.o7wa .nm{top:192px}
+}
+/* ===== סבב 12: שני רקעים בלבד ומרווחים מהודקים ===== */
+:root{--hbg:radial-gradient(1100px 560px at 50% -10%,#0d3a7a 0%,transparent 60%),#050b18;--pad:56px}
+.hero,.tst,.p120,.close{background:var(--hbg)}
+.close{border-top:0}
+.p120 .hrow{margin-top:44px}
+.t4{margin-top:44px}
+.o7tb.sec{padding:56px 0 60px}
+.o7tb .gr{gap:56px}
+.o7tb .en{margin-top:36px}
+.sl li{grid-template-columns:52px 1fr;padding:14px 0;align-items:center}
+.sl i{display:block;width:52px;height:52px;margin:0}
+.sl i img{width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply}
+.o7wa{margin-top:48px}
+.o7wa .st{height:470px}
+.p120 .fin{margin-top:28px}
+@media (max-width:900px){
+ :root{--pad:44px}
+ .o7tb.sec{padding:0 0 44px}
+ .o7tb .tx{padding-top:44px}
+ .sl i{width:44px;height:44px}.sl li{grid-template-columns:44px 1fr}
+ .p120 .hrow{margin-top:32px}.t4{margin-top:32px}
+ .o7wa{margin-top:52px}.o7wa .st{height:auto}
+}
+</style>
+<!-- Meta Pixel -->
+<script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','1673230423723672');fbq('track','PageView');fbq('track','ViewContent',{content_name:'דף חימום PROJECT YOU 120',content_category:'warmup'});</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1673230423723672&ev=PageView&noscript=1" alt=""></noscript>
+<!-- Microsoft Clarity -->
+<script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","wktmvyma2p");</script>
+</head><body>
+
+<header class="hero">
+ <div class="w">
+  <div class="top"><div class="cap2"><img src="img/logo_w.png" alt="לוגו אריאל לרידו"><i></i><div><b>אריאל לרידו</b><span>אימון אישי · כפר שמריהו</span></div></div></div>
+  <div class="hgrid">
+   <div class="ht">
+    <h1 class="grad">הפרטים התקבלו בהצלחה</h1>
+    <p class="sub">בשעות הקרובות ארים אליך טלפון כדי להכיר קצת את המצב שלך ולראות איך אפשר להתחיל. שמור את המספר שלי כדי שתזהה את השיחה.</p>
+    <div class="acts"><a class="btn pri" id="vcf" href="#">לחץ כאן לשמירת המספר שלי<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-1.5a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4V21"/><circle cx="9.5" cy="7.5" r="3.5"/><path d="M19 8v6M22 11h-6"/></svg></a></div>
+   </div>
+   <div class="vid" id="hv">
+    <video class="amb" src="vid/selfie.mp4" muted playsinline loop preload="auto" aria-hidden="true" tabindex="-1"></video>
+    <video class="main" src="vid/selfie.mp4" poster="vid/selfie_poster.jpg" muted playsinline loop autoplay preload="auto"></video>
+    <button class="snd" type="button" aria-label="ניגון ההודעה מאריאל עם סאונד"><span class="eq"><i></i><i></i><i></i></span>לחץ כאן לשמוע אותי</button>
+    <div class="cap"><img src="img/logo_w.png" alt=""><div><b>הודעה קצרה ממני</b>30 שניות, לפני שאני מתקשר</div></div>
+   </div>
+  </div>
+ </div>
+ <div class="base"></div>
+</header>
+
+<section class="res sec" aria-labelledby="rt">
+ <div class="w">
+  <div class="hcen"><h2 id="rt">תוצאות של מתאמנים</h2><p class="sub2">כמה זמן כל אחד התאמן, כמה פעמים בשבוע ומה הייתה התוצאה שלו.</p></div>
+  <div class="stage">
+   <div class="cmp" id="cmp">
+    <img id="cb" src="ba/05_before_s.jpg" alt="לפני">
+    <img id="ca" class="after" src="ba/05_after_s.jpg" alt="אחרי">
+    <span class="tag b">לפני</span><span class="tag a">אחרי</span>
+    <span class="hd"></span>
+    <button class="kn" type="button" aria-label="גרירה בין לפני לאחרי"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></svg></button>
+   </div>
+   <div class="who">
+    <div class="nm" id="wn">אנדריי</div>
+    <div class="ag" id="wa">בעל בית קפה</div>
+    <div class="sticker" id="wr">ירידה של 10 ק"ג בחודשיים</div>
+    <p class="st" id="ws"></p>
+    <div class="more"><b>עוד תהליכים</b><div class="thumbs" id="thumbs"></div></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="tst sec" aria-labelledby="tt">
+ <div class="w">
+  <h2 id="tt"><span class="lt">לפני שאנחנו נפגשים,</span>תשמע מה המתאמנים שלי מספרים על האימונים איתי</h2>
+  <div class="flow" id="flow"></div>
+  <div class="nav"><button type="button" id="pv" aria-label="הסרטון הקודם"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"/></svg></button><div class="ct" id="ct"></div><button type="button" id="nx" aria-label="הסרטון הבא"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12H4M10 6l-6 6 6 6"/></svg></button></div>
+ </div>
+</section>
+
+<section class="o7tb sec" aria-labelledby="trt"><div class="w"><div class="gr">
+ <div class="tx"><span class="kk">מה נעשה יחד</span><h2 id="trt">בשעה הראשונה שלך אצלי בסטודיו</h2><p class="ld">שעה אישית בסטודיו בכפר שמריהו. יום לפני אבקש ממך צילום של היומן לשבוע הבא, כדי שנעבוד עם הזמן שבאמת יש לך.</p><ol class="sl"><li><i><img src="img/ic3/cal_s.png" alt=""></i><div><b>מכירים את השבוע שלך</b><p>עוברים יחד על היומן ורואים איפה באמת יש מקום לאימונים.</p></div></li><li><i><img src="img/ic3/tape_s.png" alt=""></i><div><b>מדידות ותמונה</b><p>אם תסכים, נתעד נקודת פתיחה כדי שיהיה לנו למה להשוות.</p></div></li><li><i><img src="img/ic3/dumb_s.png" alt=""></i><div><b>מתאמנים יחד</b><p>בקצב שלך, כדי שתצא עם תחושה של "אני יכול" ולא עם כאבים.</p></div></li><li><i><img src="img/ic3/plan_s.png" alt=""></i><div><b>יוצאים עם תוכנית</b><p>איך לשלב 3 אימונים בשבוע ולאכול נכון בתוך השגרה שלך.</p></div></li></ol><div class="pr"><b>97 ש"ח</b><span>שעת אימון אישי<br>בסטודיו בכפר שמריהו</span></div></div>
+ <figure><img src="img/up/t2.jpg" alt="אריאל מאמן מתאמן בסטודיו"><div class="nt"><span class="ap"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>יומן</span><small>עכשיו</small><b>אימון היכרות עם אריאל</b><p>היום 17:00-18:00 · כפר שמריהו</p></div></figure>
+</div><p class="en">בסוף השעה תהיה לך תשובה ברורה מה מתאים לך מכאן: להמשיך איתי, לבחור מאמן אחר או להתאמן לבד.</p></div></section>
+
+<section class="p120 sec" aria-labelledby="pt">
+ <div class="pyb"><div class="pyp" role="img" aria-label="אריאל מאמן מתאמן בסטודיו"></div>
+  <div class="w pyt"><span class="pyk">PROJECT YOU</span><div class="pyn"><b>120</b><span>ימים של ליווי אישי<small>בסטודיו וגם מרחוק</small></span></div></div></div>
+ <div class="w">
+  <div class="hrow"><h2 id="pt">אם נמשיך יחד, <span class="lt">נבנה את האימונים סביב החיים שכבר יש לך</span></h2>
+   <p class="lead">המסלול שלי נקרא PROJECT YOU 120, והוא ליווי של 120 יום. אני יודע שאין לך זמן להתאמן כל יום או לבלות שעה וחצי בחדר כושר, אז אנחנו עובדים עם השבוע האמיתי שלך.</p></div>
+  <ol class="t4">
+   <li class="s4"><div class="hx"><span class="hex" style="background-image:url(img/obj/plan.jpg)"></span><span class="zn">01</span></div><div class="s4t"><b>ביום הראשון</b><p>בוחרים יחד מסלול, בסטודיו או מרחוק, ואני בונה לך תוכנית לפי הזמן שבאמת פנוי לך ביומן.</p></div></li>
+   <li class="s4"><div class="hx"><span class="hex" style="background-image:url(img/obj/phone.jpg)"></span><span class="zn">02</span></div><div class="s4t"><b>כל שבוע</b><p>אני בודק איתך מה עבד ומה לא הסתדר. אם השבוע נהיה עמוס, משנים את התוכנית לפני שהוא הופך לחודש בלי אימונים.</p></div></li>
+   <li class="s4"><div class="hx"><span class="hex" style="background-image:url(img/obj/scale.jpg)"></span><span class="zn">03</span></div><div class="s4t"><b>פעם בחודש</b><p>נפגשים, מודדים ורואים מה השתנה מאז שהתחלנו.</p></div></li>
+   <li class="s4"><div class="hx"><span class="hex" style="background-image:url(img/obj/shoes.jpg)"></span><span class="zn">04</span></div><div class="s4t"><b>ביום 120</b><p>יש לך הרגלים שמחזיקים גם בשבוע עמוס, ואתה יודע להמשיך איתם לבד.</p></div></li>
+  </ol>
+  <div class="o7wa"><div class="tx"><span class="gk">בכל יום, לאורך כל 120 הימים</span><h3>קשר ישיר איתי בווטסאפ</h3><p>לכל שאלה ולכל עזרה. אימון שהתפספס, נסיעה לחו"ל, ארוחה בחוץ או סתם שבוע עמוס, כותבים לי ואני עונה.</p></div>
+ <div class="st"><div class="av"><img src="img/ariel_face.jpg" alt="אריאל לרידו"><span class="on"></span></div><div class="nm"><b>אריאל לרידו</b><span>מקוון</span></div>
+  <div class="b b1 out">הפגישה התארכה ופספסתי את האימון</div><div class="b b2 in">קורה. מחר ב-7:00 יש לי מקום, מתאים לך?</div>
+  <div class="b b3 out">בשבוע הבא אני בחו"ל</div><div class="b b4 in">אשלח לך אימון של 25 דקות לחדר במלון, בלי ציוד</div></div>
+</div>
+  <p class="fin">את המסלול נבחר יחד באימון ההיכרות, ואין שום חובה להמשיך.</p>
+ </div>
+</section>
+
+<section class="close sec" aria-labelledby="ctt">
+ <div class="w">
+  <h2 id="ctt">נדבר בקרוב<span>ונתאם את האימון שלנו.</span></h2>
+  <div class="cols">
+   <p>אני יודע שלהכניס אימונים בין העבודה, הנסיעות והזמן עם הילדים זה לא עניין פשוט. <b>בשיחה ננסה להבין איפה זה נתקע אצלך.</b></p>
+   <p>אם יש משהו שאתה רוצה שאדע לפני שאני מתקשר, או שאלה שחשוב לך לברר, <b>אפשר לכתוב לי ישירות בווטסאפ.</b></p>
+  </div>
+  <a class="btn wa" id="wab" href="#" target="_blank" rel="noopener">לחץ כאן לשאלות נוספות<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.9-2.8-1.2-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l2 .9c.3.1.5.2.5.3.1.2.1.7-.1 1.2z"/></svg></a>
+ </div>
+</section>
+<footer><div class="w"><div class="l"><img src="img/logo_tmp.svg" alt=""><span>אריאל לרידו · אימון אישי · כפר שמריהו</span></div><span>© 2026</span></div></footer>
+
+<script>
+const PHONE='972543006261';/* המספר של אריאל יוכנס כאן, בפורמט 9725XXXXXXXX */
+const P=[
+ {k:'05',n:'אנדריי',w:'בעל בית קפה',r:'ירידה של 10 ק"ג בחודשיים',t:'10 ק"ג',s:'הגיע עם בטן גדולה, עייפות, חוסר אנרגיה וקושי בתנועות יומיומיות. בנינו תהליך של תזונה, אימונים ושינוי הרגלים. היום הוא חזק יותר, קליל יותר, בריא יותר וממשיך להתקדם.'},
+ {k:'04',n:'עדי',w:'',r:'ירידה של 20 ק"ג ב-6 חודשים',t:'20 ק"ג',s:'הגיע בלי כוחות, בלי מוטיבציה ובלי מסגרת, עם שבוע שלא השאיר לו זמן לעצמו. בנינו שגרה שמתאימה ללו"ז שלו, תזונה נכונה והרגלים חזקים. היום יש לו גוף חטוב ושגרה יציבה.'},
+ {k:'14',n:'דניאל',w:'',r:'ירידה של 12 ק"ג ב-6 חודשים',t:'12 ק"ג',s:'הגיע עם חוסר שליטה, חוסר כיוון ותחושת נתק מהגוף. בנינו תהליך של תזונה, אימונים וליווי אישי. היום יש לו גוף חדש וביטחון.'},
+ {k:'16',n:'איליי',w:'',r:'ירידה של 10 ק"ג ב-4 חודשים',t:'10 ק"ג',s:'הגיע עם ידע באימונים, אבל חיפש משמעת ושיטה אמיתית. בנינו תהליך שמחזק גם את הגוף וגם את הראש. היום יש לו שגרה יציבה ושליטה מלאה בעצמו.'},
+ {k:'09',n:'אלנתן',w:'',r:'ריקומפוזישן מלא',t:'ריקומפוזישן',s:'הגיע במצב סקיני פאט, עם חוסר ביטחון ושגרה עמוסה מאוד. בנינו תהליך מותאם ללו"ז שלו, עם תזונה ואימונים מדויקים. היום הוא שרירי, עם ביטחון גבוה וכושר שנכנס גם לשבוע העמוס.'},
+ {k:'03',n:'אושר',w:'',r:'ירידה של 12 ק"ג',t:'12 ק"ג',s:''},
+ {k:'02',n:'דן',w:'',r:'ירידה של 10 ק"ג',t:'10 ק"ג',s:''},
+ {k:'12',n:'גיל',w:'',r:'ירידה של 6 ק"ג',t:'6 ק"ג',s:''},
+ {k:'13',n:'הראל',w:'',r:'ירידה של 17 ק"ג ב-6 חודשים',t:'17 ק"ג',s:'הגיע עם חוסר ביטחון, עייפות ותחושת חוסר חיבור לעצמו. בנינו תהליך של תזונה, אימונים ושגרה שמבוססת על משמעת. היום יש לו גוף חזק ואנרגיה חדשה.'},
+ {k:'07',n:'נועם',w:'',r:'ירידה של 14 ק"ג ב-6 חודשים',t:'14 ק"ג',s:'הגיע עם השמנה בטנית וחוסר ביטחון. בנינו תהליך מותאם לשגרה שלו, תזונה נכונה ואימונים. היום הוא חזק יותר ובטוח בעצמו.'}];
+const V=[{f:'tv6',n:'אנדריי',d:''},{f:'lia',n:'ליה',d:''},{f:'tv1',n:'אלנתן',d:''},{f:'tv2',n:'',d:''},{f:'tv4',n:'',d:''},{f:'tv3',n:'',d:''},{f:'tv5',n:'',d:''},{f:'tv0',n:'איתי',d:''}];
+const $=s=>document.querySelector(s);
+const PLAY='<svg viewBox="0 0 24 24" fill="#fff"><path d="M7 4.5v15l13-7.5z"/></svg>';
+/* לפני ואחרי */
+const cmp=$('#cmp');let drag=false;
+const setP=x=>{const r=cmp.getBoundingClientRect();let v=(r.right-x)/r.width*100;v=Math.max(3,Math.min(97,v));cmp.style.setProperty('--p',v+'%')};
+cmp.addEventListener('pointerdown',e=>{drag=true;cmp.setPointerCapture(e.pointerId);setP(e.clientX)});
+cmp.addEventListener('pointermove',e=>{if(drag)setP(e.clientX)});
+cmp.addEventListener('pointerup',()=>drag=false);
+$('.kn').addEventListener('keydown',e=>{const c=parseFloat(getComputedStyle(cmp).getPropertyValue('--p'));if(e.key==='ArrowLeft')cmp.style.setProperty('--p',Math.min(97,c+5)+'%');if(e.key==='ArrowRight')cmp.style.setProperty('--p',Math.max(3,c-5)+'%')});
+const th=$('#thumbs');
+function pick(i){const p=P[i];$('#cb').src=`ba/${p.k}_before_s.jpg`;$('#ca').src=`ba/${p.k}_after_s.jpg`;$('#wn').textContent=p.n;$('#wa').textContent=p.w||'';$('#wr').textContent=p.r;$('#ws').textContent=p.s;cmp.style.setProperty('--p','50%');[...th.children].forEach((b,j)=>b.setAttribute('aria-pressed',j===i))}
+P.forEach((p,i)=>{const b=document.createElement('button');b.className='th';b.type='button';b.setAttribute('aria-label','התהליך של '+p.n);b.innerHTML=`<img src="ba/${p.k}_after_s.jpg" alt="" loading="lazy"><span><b>${p.n}</b>${p.t}</span>`;b.onclick=()=>pick(i);th.append(b)});
+pick(0);
+/* סרטונים */
+const flow=$('#flow');let cur=0;
+V.forEach((v,i)=>{const a=document.createElement('article');a.className='vc';a.innerHTML=`<img src="tv/${v.f}.jpg" alt="${v.n}" loading="lazy"><button class="pl" type="button" aria-label="ניגון הסרטון של ${v.n}">${PLAY}</button><div class="t"><b>${v.n}</b>${v.d}</div>`;
+ a.addEventListener('click',e=>{if(i!==cur){go(i);return}if(e.target.closest('.pl')){const vd=document.createElement('video');vd.src=`tvv/${v.f}.mp4`;vd.controls=true;vd.playsInline=true;vd.autoplay=true;a.querySelector('img').replaceWith(vd);a.querySelector('.pl').remove();a.querySelector('.t').remove();vd.play().catch(()=>{})}});flow.append(a)});
+function go(i){cur=(i+V.length)%V.length;flow.querySelectorAll('video').forEach(v=>v.pause());const m=innerWidth<900;const step=m?innerWidth*.5:330;[...flow.children].forEach((a,j)=>{let d=j-cur;if(d>V.length/2)d-=V.length;if(d<-V.length/2)d+=V.length;const ad=Math.abs(d);a.classList.toggle('on',d===0);a.style.transform=`translateX(calc(-50% - ${d*step}px)) scale(${d===0?1:.82})`;a.style.opacity=ad>2?0:ad===0?1:ad===1?.5:.22;a.style.zIndex=10-ad;a.style.filter=d===0?'none':'brightness(.6)';a.style.pointerEvents=ad>1?'none':'auto'});$('#ct').innerHTML=`<b>${cur+1}</b> / ${V.length}`}
+$('#nx').onclick=()=>go(cur+1);$('#pv').onclick=()=>go(cur-1);go(0);addEventListener('resize',()=>go(cur));
+let sx=null;flow.addEventListener('touchstart',e=>sx=e.touches[0].clientX,{passive:true});flow.addEventListener('touchend',e=>{if(sx==null)return;const dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>40)go(cur+(dx<0?-1:1));sx=null});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});$('#cal')&&io.observe($('#cal'));$('#hour')&&io.observe($('#hour'));
+/* מספר וווטסאפ */
+$('#vcf').href='data:text/vcard;charset=utf-8,'+encodeURIComponent(`BEGIN:VCARD\nVERSION:3.0\nFN:אריאל לרידו - מאמן אישי\nORG:אריאל לרידו\n${PHONE?'TEL;TYPE=CELL:+'+PHONE+'\n':''}END:VCARD`);
+$('#wab').href='https://wa.me/'+PHONE;
+
+/* סלפי: מתנגן בשקט, לחיצה ראשונה מתחילה מההתחלה עם סאונד */
+(()=>{const h=document.getElementById('hv');if(!h)return;const m=h.querySelector('.main'),am=h.querySelector('.amb');
+am.play().catch(()=>{});setInterval(()=>{if(Math.abs(am.currentTime-m.currentTime)>.3)am.currentTime=m.currentTime},1000);
+function go(){if(h.classList.contains('on')){m.paused?m.play():m.pause();return}h.classList.add('on');m.loop=false;m.muted=false;m.currentTime=0;am.currentTime=0;m.controls=true;m.play().catch(()=>{})}
+h.querySelector('.snd').addEventListener('click',e=>{e.stopPropagation();go()});m.addEventListener('click',()=>{if(!h.classList.contains('on'))go()});
+m.addEventListener('play',()=>am.play().catch(()=>{}));m.addEventListener('pause',()=>am.pause())})();
+/* זום מהאימון ביומן אל השעה, וקו הציר שמתמלא בגלילה */
+(()=>{const st=document.querySelector('.t2stage'),z=document.getElementById('zoom'),ev=document.querySelector('.me2'),hr=document.getElementById('hour');
+function draw(){if(!st||!ev||!hr)return;const S=st.getBoundingClientRect(),E=ev.getBoundingClientRect(),H=hr.getBoundingClientRect();let p;
+ if(innerWidth>900){p=[[E.left,E.top],[E.left,E.bottom],[H.right,H.bottom-24],[H.right,H.top+24]]}else{p=[[E.left,E.bottom],[E.right,E.bottom],[H.right-18,H.top],[H.left+18,H.top]]}
+ z.querySelector('polygon').setAttribute('points',p.map(([x,y])=>(x-S.left)+','+(y-S.top)).join(' '))}
+addEventListener('resize',draw);addEventListener('load',draw);setTimeout(draw,300);setTimeout(draw,1200);
+})();
+</script>
+<script>/* אירועים: כל אירוע נשלח גם לפיקסל וגם לקליירטי, פעם אחת לכל ביקור */
+(()=>{const sent={};
+const ev=(name,std,params)=>{if(sent[name])return;sent[name]=1;
+ try{std?fbq('track',std,params||{}):fbq('trackCustom',name,params||{})}catch(e){}
+ try{clarity('event',name)}catch(e){}};
+window.__ev=ev;
+// מקור הגעה: utm מהמודעה, כתג בקליירטי
+try{const q=new URLSearchParams(location.search);clarity('set','page','warmup');
+ ['utm_source','utm_medium','utm_campaign','utm_content','utm_term'].forEach(k=>{if(q.get(k))clarity('set',k,q.get(k))});
+ if(q.get('fbclid'))clarity('set','from_meta','yes')}catch(e){}
+// לחיצות
+document.addEventListener('click',e=>{const t=e.target;
+ if(t.closest('#wab'))ev('WhatsAppClick','Contact',{content_name:'ווטסאפ לאריאל'});
+ else if(t.closest('#vcf'))ev('SaveContact');
+ else if(t.closest('.snd'))ev('SelfieSoundOn');
+ else if(t.closest('.vc .pl'))ev('TestimonialPlay');
+ else if(t.closest('#nx,#pv'))ev('TestimonialBrowse');},true);
+// גרירה בהשוואת לפני ואחרי
+document.querySelectorAll('.cmp').forEach(c=>c.addEventListener('pointerdown',()=>ev('BeforeAfterDrag'),{once:true}));
+// עומק גלילה
+const marks=[25,50,75,90];addEventListener('scroll',()=>{const h=document.documentElement,p=(h.scrollTop+innerHeight)/h.scrollHeight*100;
+ marks.forEach(m=>{if(p>=m)ev('Scroll'+m)})},{passive:true});
+// הגעה לסקשנים
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){ev('Seen_'+x.target.dataset.trk);io.unobserve(x.target)}}),{threshold:.35});
+[['.res','Results'],['.tst','Testimonials'],['.o7tb','TrialHour'],['.p120','Program120'],['.o7wa','WhatsAppBlock'],['.close','Closing']].forEach(([q,n])=>{const el=document.querySelector(q);if(el){el.dataset.trk=n;io.observe(el)}});
+// זמן בדף
+[[30,'Engaged30s'],[90,'Engaged90s']].forEach(([s,n])=>setTimeout(()=>{if(!document.hidden)ev(n)},s*1000));
+})();</script>
+</body></html>

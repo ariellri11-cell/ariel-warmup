@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#99EBFF"/><stop offset="1" stop-color="#2A8AD4"/></linearGradient></defs>
+  <path d="M60 10 L69 22 L82 16 L80 31 L94 34 L84 44" stroke="url(#g)" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M60 10 L51 22 L38 16 L40 31 L26 34 L36 44" stroke="url(#g)" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M30 92 L52 40 L64 40 L74 64" stroke="#fff" stroke-width="9" stroke-linejoin="miter"/>
+  <path d="M78 40 L78 92 L98 92" stroke="#fff" stroke-width="9" stroke-linejoin="miter"/>
+  <g transform="rotate(-38 60 74)"><rect x="34" y="71" width="52" height="6" fill="url(#g)"/><rect x="28" y="63" width="8" height="22" fill="url(#g)"/><rect x="84" y="63" width="8" height="22" fill="url(#g)"/></g>
+  <text x="60" y="114" text-anchor="middle" font-family="Arial Black,Arial,sans-serif" font-weight="900" font-size="15" letter-spacing="2.5" fill="#fff">LARIDO</text>
+</svg>
