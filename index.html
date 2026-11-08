@@ -587,6 +587,24 @@ fbq('init','1673230423723672');fbq('track','PageView');fbq('track','ViewContent'
 <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1673230423723672&ev=PageView&noscript=1" alt=""></noscript>
 <!-- Microsoft Clarity -->
 <script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","wktmvyma2p");</script>
+<style>/* ===== סבב 14: מובייל ===== */
+.who .ag{display:none!important}
+@media (max-width:900px){
+ .vid{width:88%;align-self:center;margin:18px auto 0;aspect-ratio:auto;height:min(50svh,390px);border-radius:16px}
+ .hero .acts{margin-top:18px}
+ .cmp{width:82%;height:min(98vw,440px)}
+ .o7tb figure img{aspect-ratio:4/3.3;object-position:center 78%}
+ .o7tb .gr{gap:0}
+ .o7tb .tx{padding-top:56px}
+ .pyp{height:220px}
+ .pyt{margin-top:-56px}
+ .pyn{gap:6px;margin-top:10px}
+ .pyn b{font-size:124px}
+ .p120 .hrow{margin-top:22px}
+ .t4{margin-top:26px;gap:20px}
+ .o7wa{margin-top:40px}
+}
+</style>
 </head><body>
 
 <header class="hero">
@@ -646,7 +664,7 @@ fbq('init','1673230423723672');fbq('track','PageView');fbq('track','ViewContent'
 
 <section class="p120 sec" aria-labelledby="pt">
  <div class="pyb"><div class="pyp" role="img" aria-label="אריאל מאמן מתאמן בסטודיו"></div>
-  <div class="w pyt"><span class="pyk">PROJECT YOU</span><div class="pyn"><b>120</b><span>ימים של ליווי אישי<small>בסטודיו וגם מרחוק</small></span></div></div></div>
+  <div class="w pyt"><span class="pyk">PROJECT YOU</span><div class="pyn"><b>120</b><span>ימים של ליווי אישי</span></div></div></div>
  <div class="w">
   <div class="hrow"><h2 id="pt">אם נמשיך יחד, <span class="lt">נבנה את האימונים סביב החיים שכבר יש לך</span></h2>
    <p class="lead">המסלול שלי נקרא PROJECT YOU 120, והוא ליווי של 120 יום. אני יודע שאין לך זמן להתאמן כל יום או לבלות שעה וחצי בחדר כושר, אז אנחנו עובדים עם השבוע האמיתי שלך.</p></div>
@@ -758,4 +776,9 @@ const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){ev('Se
 // זמן בדף
 [[30,'Engaged30s'],[90,'Engaged90s']].forEach(([s,n])=>setTimeout(()=>{if(!document.hidden)ev(n)},s*1000));
 })();</script>
+<script>/* סבב 14: הסרטון מתנגן מיד בכניסה (בשקט, זה מה שהדפדפן מרשה), וחוזר לנגן אם נעצר */
+(()=>{const m=document.querySelector('#hv .main');if(!m)return;m.muted=true;
+const kick=()=>{if(m.paused&&!document.getElementById('hv').classList.contains('on'))m.play().catch(()=>{})};
+kick();addEventListener('load',kick);document.addEventListener('visibilitychange',()=>{if(!document.hidden)kick()});
+['touchstart','scroll','pointerdown'].forEach(t=>addEventListener(t,kick,{passive:true,once:true}))})();</script>
 </body></html>
